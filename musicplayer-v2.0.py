@@ -288,8 +288,7 @@ def addsongs():
 	
 
 	# Initialtes The Scroll Bar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Needs To Be Fixed  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	scrollbar =tk.Scrollbar(root, orient="vertical")
-	scrollbar.config(command=songs.yview)
+	scrollbar =tk.Scrollbar(root, orient="vertical",command=songs.yview)
 	scrollbar.place(relx=0.662,rely=0.15)
 	songs.config(yscrollcommand=scrollbar.set)
 	#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
